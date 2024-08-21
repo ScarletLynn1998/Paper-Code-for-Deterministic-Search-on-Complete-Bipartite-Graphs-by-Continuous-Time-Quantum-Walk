@@ -95,7 +95,7 @@ while i < itr:
 qc_measured = qc.measure_all(inplace=False)
 sampler = Sampler()
 result = sampler.run(qc_measured, shots=1024).result()
-print("Quasi probability distribution: {result.quasi_dists}")
+print(f"Quasi probability distribution: {result.quasi_dists}")
 qc.draw(output='mpl')
 plt.show()
 
